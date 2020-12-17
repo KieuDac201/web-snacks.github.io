@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Snacks Restaurants Category Flat Bootstrap Responsive Web Template | Home :: W3layouts</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Snacks Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	
+	
+	<!-- gallery light box -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+	    rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
+	    rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+</head>
+
+<body>
+	<!-- BANNER -->
+	<div class="banner" style="background: url('images/1.jpg');">
+		<header class="header">
+			<div class="nav container">
+				<a href="" class="logo"><i class="fas fa-utensils"></i><span>Snacks</span></a>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#" class="nav__link btn__about" >About</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Page</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+				</ul>
+				<div class="btn__loginRegister">
+					<a href="#" class="btn__login" onclick="clickShowForm('.form__login'); showOverlay()">Login</a>
+					<a href="#" class="btn__register" onclick="clickShowForm('.form__register'); showOverlay()">Register</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- BANNER TEXT -->
+
+		<div class="banner__text">
+			<h2>Come to the luxurious <span>Tasty Snacks</span></h2>
+			<p>Find Delivery Outlet near you</p>
+			<div class="input__search">
+				<input type="text" placeholder="Search here...">
+				<button class="btn__search">Search</button>
+			</div>
+		</div>
+
+		<div class="indicators">
+			<div class="indicator active"></div>
+			<div class="indicator"></div>
+		</div>
+
+		<div class="overlay" onclick="clickOvelay()"></div>
+		<form action="#" class="form form__login" autocomplete="off" >
+			<div class="top"><i class="fas fa-times close" onclick="hideOverlay(); clickHideForm('.form__login')"></i></div>
+			<h3>Login now</h3>
+			<div class="form__box">
+				<div class="form__group">
+					<label for="username">Your Name</label>
+					<input type="text" name="username" id="username">
+					<span></span>
+				</div>
+				<div class="form__group">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password">
+					<span></span>
+				</div>
+				<div class="form__group">
+					<button type="submit">Login</button>
+				</div>
+				<p class="forgot__pass">Forgot your password?</p>
+				<p class="not__account">Forgot your password? <span onclick="clickShowForm('.form__register')">Create one now</span></p>
+			</div>
+		</form>
+		<form action="#" class="form form__register" autocomplete="off" onsubmit="validateEmail()">
+			<div class="top"><i class="fas fa-times close" onclick="hideOverlay(); clickHideForm('.form__register')"></i></div>
+			<h3>Register Now</h3>
+			<div class="form__box ">
+				<div class="form__group">
+					<label for="usernameRegister">Your Name</label>
+					<input type="text" id="usernameRegister" name="username">
+				</div>
+				<div class="form__group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" >
+				</div>
+				<div class="form__group">
+					<label for="passwordRegister">Password</label>
+					<input type="password" id="passwordRegister" name="password">
+				</div>
+				<div class="form__group">
+					<label for="confirm__passwordRegister">Confirm Password</label>
+					<input type="password" id="confirm__passwordRegister" name="confirmPassword">
+				</div>
+				<div class="form__group">
+					<button type="submit">Login</button>
+				</div>
+				<p>By clicking Register, I agree to your terms</p>
+			</div>
+		</form>
+	</div>
+
+	<!-- ABOUT -->
+	<section class="about">
+		<div class="about__main container">
+			<h2 class="about__header">Welcome to our Snacks</h2>
+			<p class="about__desc">world's no.1 tasty food</p>
+			<div class="about__cards">
+				<div class="about__card">
+					<div class="about__card--img">
+						<img src="./images/a1.jpg" alt="">
+					</div>
+					<h4 class="about__card--header">Clean & Continental Place</h4>
+					<p class="about__card--desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+					<a href="" class="btn__readMore">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
+				</div>
+				<div class="about__card">
+					<div class="about__card--img">
+						<img src="./images/a2.jpg" alt="">
+					</div>
+					<h4 class="about__card--header">100% Healthy Food</h4>
+					<p class="about__card--desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+					<a href="" class="btn__readMore"><span>Read More</span><i class="fas fa-long-arrow-alt-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SERVICES -->
+	<section class="services">
+		<div class="services__main container">
+			<div class="services__header">The great advantages</div>
+			<p class="services__desc">of a hotel is that it is a refuge from home life</p>
+			<div class="service">
+				<div class="service__img">
+					<img src="./images/3.png" alt="">
+				</div>
+				<div class="service__content">
+					<div class="service__box">
+						<div class="service__box--number">1</div>
+						<h4 class="service__box--header">Meal Delivery</h4>
+						<p class="service__box--desc">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="service__box">
+						<div class="service__box--number">2</div>
+						<h4 class="service__box--header">Catering</h4>
+						<p class="service__box--desc">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="service__box">
+						<div class="service__box--number">3</div>
+						<h4 class="service__box--header">Events</h4>
+						<p class="service__box--desc">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="specials">
+		<div class="specials__main">
+			<div class="specials__top container">
+				<h3 class="specials__top--header">Fresh, organic ingredients,</h3>
+				<p class="specials__top--desc">Carefully prepared, Eat green for a reason.</p>
+				<a class="btn__readMore">Read more about Specials our Specials <i class="fas fa-long-arrow-alt-right"></i></a>
+			</div>
+			<div class="specials__middle">
+				<div class="specials__middle--content ">
+					<h4>Our Specials</h4>
+					<p class="specials__middle--desc">Carefully prepared, Fresh, organic ingredients.</p>
+					<a href="" class="btn__readMore">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
+				</div>
+				<div class="specials__middle--img">
+					<img src="./images/middle.jpg" alt="">
+				</div>
+			</div>
+			<div class="specials__bottom">
+				<div class="specials__bottom--content">
+					<h4 class="specials__bottom--header">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h4>
+					<div class="specials__bottom--desc">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad reprehenderit qui in ea voluptate velit esse</div>
+					<a href="" class="btn__readMore">Read More<i class="fas fa-long-arrow-alt-right"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- GALLERY -->
+	<section class="gallery">
+		<div class="gallery__main container">
+			<div class="gallery__box">
+				<div class="gallery__box--img"><img src="./images/g1.jpg" alt=""></div>
+				<div class="gallery__box--img"><img src="./images/g2.jpg" alt=""></div>
+				<div class="gallery__box--img"><img src="./images/g4.jpg" alt=""></div>
+			</div>
+			<div class="gallery__box">
+				<div class="gallery__box--img"><img src="./images/g7.jpg" alt=""></div>
+				<div class="gallery__box--img"><img src="./images/g8.jpg" alt=""></div>
+				<div class="gallery__box--img"><img src="./images/g9.jpg" alt=""></div>
+			</div>
+			<div class="gallery__box">
+				<div class="gallery__box--img"><img src="./images/g4.jpg" alt=""></div>
+				<div class="gallery__box--img"><img src="./images/g5.jpg" alt=""></div>
+				<div class="gallery__box--img"><img src="./images/g6.jpg" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+	<section class="contact">
+		<div class="contact__main container">
+			<div class="contact__header">Contact Us</div>
+			<div class="contact__desc">world's no.1 tasty food
+				Address</div>
+			<div class="contact__boxs">
+				<div class="contact__box">
+					<div class="contact__box--info">
+						<h4>Address</h4>
+						<p>123 San Sebastian, Hill Towers 4567,</p>
+						<p>New York City, USA</p>
+					</div>
+					<div class="contact__box--info">
+						<h4>Phone</h4>
+						<p>+222 111 333 4444</p>
+						<p>+222 111 333 5555</p>
+					</div>
+					<div class="contact__box--info">
+						<h4>Mail</h4>
+						<p>mail@example.com</p>
+						<p>mail2@example.com</p>
+					</div>
+				</div>
+				<div class="contact__box">
+					<h4>Get In Touch</h4>
+					<form action="" autocomplete="off">
+						<input type="text" placeholder="Name">
+						<input type="eamil" placeholder="Email">
+						<textarea name="" id="" placeholder="Message"></textarea>
+					<button>SEND</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="footer__info">
+				<div class="footer__logo">
+					<a href="" class="logo"><i class="fas fa-utensils"></i><span>Snacks</span></a>
+				</div>
+				<div class="footer__boxs">
+					<div class="footer__box">
+						<h4>Home</h4>
+						<ul>
+							<li><a href="#">Index</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="footer__box">
+						<h4>Navigation</h4>
+						<ul>
+							<li><a href="#">Advantages</a></li>
+							<li><a href="#">Specials</a></li>
+							<li><a href="#">Some More</a></li>
+							<li><a href="#">Gallery</a></li>
+						</ul>
+					</div>
+					<div class="footer__box">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="#">Link Here</a></li>
+							<li><a href="#">Link Here</a></li>
+							<li><a href="#">Link Here</a></li>
+						</ul>
+					</div>
+					<div class="footer__box">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="#">+01(24) 8543 8088</a></li>
+							<li><a href="#">info@example.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer__copyright">
+			<p>© 2018 Snacks. All rights reserved | Design by <a>W3layouts</a></p>
+		</div>
+	</footer>
+	<!-- BTN SCROLL TO TOP -->
+	<div class="btn__scrollTop">
+		
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.btn__scrollTop').click(() => {
+				$("html").animate({
+					scrollTop: 0
+				}, 30)
+			});
+
+			$('.btn__scrollTop').fadeOut();
+
+			$(window).scroll(() => {
+				
+				if($(window).scrollTop() < 100){
+					$('.btn__scrollTop').fadeOut();
+				}else{
+					$('.btn__scrollTop').fadeIn();
+				}
+			});
+			
+			$('.btn__about').on('click', (e) => {
+				e.preventDefault();
+				$('html').animate({
+					scrollTop: 789,
+						
+				}, 30)
+			})
+		
+			
+
+		})
+	</script>
+	<script>
+
+		let indicator1 = document.querySelector('.indicator:nth-child(1)');
+		let indicator2 = document.querySelector('.indicator:nth-child(2)');
+		const banner = document.querySelector('.banner');
+
+		// Change indicator
+		function changeIndicator(remove, add) {
+			remove.classList.remove('active');
+			add.classList.add('active');
+		}
+
+		// Indicator click
+		function indicatorClick() {
+			indicator1.addEventListener('click', () => {
+			banner.style.backgroundImage = 'url("images/1.jpg")';
+			changeIndicator(indicator2, indicator1)
+			});
+		indicator2.addEventListener('click', () => {
+			banner.style.backgroundImage = 'url("images/2.jpg")';
+			changeIndicator(indicator1, indicator2)	
+			});
+		}
+		
+		// Change Image Banner
+		function changeImgBanner() {
+			let urlBgImg = banner.style.backgroundImage;
+			if(urlBgImg == 'url("images/1.jpg")'){
+				changeIndicator(indicator1, indicator2)
+				banner.style.backgroundImage = 'url("images/2.jpg")';
+				
+			}else{
+				changeIndicator(indicator2, indicator1)
+				banner.style.backgroundImage = 'url("images/1.jpg")'
+			}
+		}
+		
+		// SHOW FORM
+		function clickShowForm(classNameForm) {
+			document.querySelector(classNameForm).classList.add('show');
+			if(classNameForm == '.form__login'){
+				document.querySelector('.form__register').classList.remove('show');
+			}else{
+				document.querySelector('.form__login').classList.remove('show');
+			}
+		}
+		// HIDE FORM
+		function clickHideForm(classNameForm) {
+				document.querySelector(classNameForm).classList.remove('show');
+		}
+
+		function showOverlay(){
+			document.querySelector('.overlay').classList.add('show')
+		}
+		function hideOverlay(){
+			document.querySelector('.overlay').classList.remove('show')
+		}
+
+		function clickOvelay(){
+			document.querySelector('.overlay').classList.remove('show')
+			document.querySelector('.form__login').classList.remove('show')
+			document.querySelector('.form__register').classList.remove('show')
+		}
+		
+	
+		
+		
+		
+		setInterval(changeImgBanner, 6000)
+		indicatorClick();
+			
+		
+		
+
+		
+	</script>
+</body>
+
+</html>
